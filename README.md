@@ -2,6 +2,7 @@
 - JavaScriptで発生しうる問題
   - インクリメントして返すだけのもの
   - 999からstring型の"999"に書き換え
+- JavaScriptをTypeScriptに変換する
 
 # contents
 ## [JavaScriptで発生しうる問題](https://typescriptbook.jp/tutorials/make-a-simple-function-via-cli#javascript%E3%81%A7%E7%99%BA%E7%94%9F%E3%81%97%E3%81%86%E3%82%8B%E5%95%8F%E9%A1%8C)
@@ -36,4 +37,12 @@ $ node increment.js
 > もしもこれが金額の計算だったら大問題です。
 
 感想：文字と数字は見た目では判断できない。
+
+
+### JavaScriptをTypeScriptに変換する
+```bash
+mv increment.js increment.ts
+```
+> TypeScriptはざっくり言って、JavaScriptに型関連の構文を追加したにすぎない言語です。なので、JavaScriptのコードはそのままでもTypeScriptとして扱えます。
+
 

@@ -1,4 +1,5 @@
-function increment(num) {
+function increment(num: number) {
+    //             ^^^^^^^^型注釈
     return num + 1;
 }
 

@@ -7,6 +7,7 @@
 # contents
 ## [JavaScriptで発生しうる問題](https://typescriptbook.jp/tutorials/make-a-simple-function-via-cli#javascript%E3%81%A7%E7%99%BA%E7%94%9F%E3%81%97%E3%81%86%E3%82%8B%E5%95%8F%E9%A1%8C)
 
+
 ### インクリメントして返すだけのもの
 ```js
 function increment(num) {
@@ -19,6 +20,7 @@ console.log(increment(999));
 $ node increment.js
 1000
 ```
+
 
 ### 999からstring型の"999"に書き換え
 ```js
@@ -44,5 +46,23 @@ $ node increment.js
 mv increment.js increment.ts
 ```
 > TypeScriptはざっくり言って、JavaScriptに型関連の構文を追加したにすぎない言語です。なので、JavaScriptのコードはそのままでもTypeScriptとして扱えます。
+
+
+### コンパイラを働かせる
+```ts
+function increment(num: number) {
+//                 ^^^^^^^^型注釈
+  return num + 1;
+}
+ 
+console.log(increment("999"));
+```
+```bash
+> tsc increment.ts
+6 console.log(increment("999"));
+                        ~~~~~
+Found 1 error in increment.ts:6
+```
+潜んでいる危険を、コーディング時点で知らせてくれる
 
 

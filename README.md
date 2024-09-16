@@ -66,3 +66,20 @@ Found 1 error in increment.ts:6
 潜んでいる危険を、コーディング時点で知らせてくれる
 
 
+### コンパイルを通す
+```ts
+function increment(num: number) {
+  return num + 1;
+}
+ 
+console.log(increment(999));
+//                    ^^^直す箇所
+```
+```bash
+tsc increment.ts
+```
+> 今度は何も表示されずに処理が終わる
+
+
+
+

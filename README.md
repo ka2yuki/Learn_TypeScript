@@ -102,3 +102,5 @@ console.log(increment(999));
 - コンパイラが生成したJSをデプロイして使う
 
 js -> ts -> js
+
+## [Reactでいいねボタンを作ろう](button_react/nice_btn.md)

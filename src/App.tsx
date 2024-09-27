@@ -4,9 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">TypeScriptはいいぞ</header>
+      <LikeButton />
     </div>
   );
+}
+
+function LikeButton() {
+  return <span>いいねボタン予定地</span>;
 }
 
 export default App;

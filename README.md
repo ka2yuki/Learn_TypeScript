@@ -103,4 +103,4 @@ console.log(increment(999));
 
 js -> ts -> js
 
-## [Reactでいいねボタンを作ろう](button_react/nice_btn.md)
+## [Reactでいいねボタンを作ろう](READMEs/nice_btn.md)
